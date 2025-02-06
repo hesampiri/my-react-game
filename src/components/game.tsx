@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import Players from '../../public/Players.svg'
 import MoveList from "./moveList";
 import { useLocation, useNavigate } from "react-router-dom";
 import Board from "./board";
@@ -127,7 +127,7 @@ const Game = () => {
       </div>
       <div className="flex flex-col items-center h-full pt-10">
         <div className="mx-4">
-          <img src="/public/Players.svg" alt="" />
+          <img src={Players}alt="" />
         </div>
         <Board
           isXnext={isXnext}
