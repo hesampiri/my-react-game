@@ -105,7 +105,7 @@ const Game = () => {
 
   return (
     <div className="mx-auto flex items-center flex-wrap container justify-around h-full">
-      <div className=" flex justify-center w-[300px] mt-10 lg:mt-0">
+      <div className=" flex justify-center w-[300px] mt-10 xl:mt-0">
         <button
           onClick={redoHandler}
           className="border-3 p-1 w-[100px] bg-[#C9F9FC] font-bold rounded-lg cursor-pointer"
@@ -125,9 +125,9 @@ const Game = () => {
           UNDO
         </button>
       </div>
-      <div className="flex flex-col items-center h-full pt-10">
+      <div className="flex flex-col items-center h-full pt-10 w-full xl:w-auto">
         <div className="mx-4">
-          <img src={Players}alt="" />
+          <img src={Players} alt="" />
         </div>
         <Board
           isXnext={isXnext}
